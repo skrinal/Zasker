@@ -1,4 +1,53 @@
+
 #root {
+  max-width: 1700px;
+  margin: 0 auto;
+  flex: 1;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  background-color: #121212;
+  min-height: 100vh;
+  padding: 0px;
+  color: #e0e0e0;
+}
+
+.app-container {
+  display: flex;
+  gap: 20px;
+  height: calc(100vh - 15vh);
+}
+
+.sidebar {
+  width: 280px;
+  background-color: #1e1e1e;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.main-content {
+  background-color: #1e1e1e;
+  flex: 1;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 24px;
+  overflow-y: auto;
+}
+
+.rightbar {
+  width: 320px;
+  background-color: #1e1e1e;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +88,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */
