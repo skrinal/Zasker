@@ -1,0 +1,8 @@
+.maincontent {
+    background-color: #1e1e1e;
+    flex: 1;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 24px;
+    overflow-y: auto;
+  }

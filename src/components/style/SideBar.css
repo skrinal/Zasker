@@ -1,0 +1,24 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+}
+
+.logosegment{
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 0;
+}
+.logotext{
+    padding: 0px 20px;
+}
+
+.mainmenu{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}

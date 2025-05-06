@@ -1,40 +1,24 @@
-import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import SideBar from './components/SideBar'
+import ContentMain from './components/ContentMain'
+import SettingsMain from './components/SettingsMain'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div class="app-container">
-      <div class="sidebar">Sidebar</div>
-      <div class="main-content">Main Content</div>
-      <div class="rightbar">Rightbar</div>
-    </div>
+    <Router>
+        <div className="app-container">
+            <SideBar />   
 
-    // <>
-    //   <div>
-    //     <a href="https://vite.dev" target="_blank">
-    //       <img src={viteLogo} className="logo" alt="Vite logo" />
-    //     </a>
-    //     <a href="https://react.dev" target="_blank">
-    //       <img src={reactLogo} className="logo react" alt="React logo" />
-    //     </a>
-    //   </div>
-    //   <h1>Vite + React</h1>
-    //   <div className="card">
-    //     <button onClick={() => setCount((count) => count + 1)}>
-    //       count is {count}
-    //     </button>
-    //     <p>
-    //       Edit <code>src/App.jsx</code> and save to test HMR
-    //     </p>
-    //   </div>
-    //   <p className="read-the-docs">
-    //     Click on the Vite and React logos to learn more
-    //   </p>
-    // </>
+            <Routes>
+                <Route path="/" element={<ContentMain />} /> {/* Default */}
+                <Route path="/page2" element={<SettingsMain />} />
+            </Routes>   
+
+            <div className="rightbar">Rightbar</div>
+        </div>
+    </Router>  
   )
 }
 
